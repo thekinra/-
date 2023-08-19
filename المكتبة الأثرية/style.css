@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=El+Messiri&display=swap');
+* {
+    font-family: 'El Messiri', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+html {
+    direction: rtl;
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.styled-text {
+    font-family: 'Aref Ruqaa', serif;
+    color: #e4b153;
+}

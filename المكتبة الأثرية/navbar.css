@@ -1,0 +1,102 @@
+.navbar {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: transparent;
+    color: hsl(0, 0%, 0%);
+    padding: 10px 30px;
+    font-size: 18px;
+    transition: all 0.4s;
+    z-index: 3000;
+}
+
+.logo {
+    color: #e4b153;
+    font-size: 40px;
+    margin:  0px 0 10px 0;
+}
+.nav-link {
+    color: white;
+}
+.nav-link:hover,.nav-link:focus {
+    color: #a2a1a0;
+}
+.buttons {
+    gap: 1.5rem;
+}
+.btn {
+    border-radius: 25px;
+    padding: 0.5rem 0.8rem;
+    background: white;
+    border: white solid 3px;
+    color: #e4b153;
+    font-weight: 500;
+}
+.login {
+    border-color: #e4b153;
+    background: #e4b153;
+    color: white;
+}
+#menu-icon, #user-icon {
+    color: white;
+    font-size: 50px;
+    display: none;
+}
+
+.logo-white {
+    color: white;
+}
+.nav-active {
+    background: #e4b153;
+    padding: 5px 30px;
+}
+.nav-active div .nav-list .nav-active:hover {
+    color: rgb(128, 128, 128);
+}
+@media (max-width: 1350px) {
+    html {
+        font-size: 55%;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .nav-list {
+        flex-direction: column;
+        position: absolute;
+        top: 82px;
+        left: -300px;
+        background: #e4b153;
+        justify-content: right;
+        padding: 25px 30px;
+        font-size: 25px;
+        transition: all .4s;
+    }
+    .active-list {
+        left: 0;
+    }
+
+    .nav-link:hover, .nav-link:focus {
+        color: rgb(124, 124, 124);
+    }
+    .logo {
+        font-size: 40px;
+    }
+    
+}
+@media (max-width: 600px) {
+    .btn {
+        display: none;
+    }
+    #user-icon {
+        display: block;
+        font-size: 40px;
+    }
+}
+@media (max-width: 350px){
+    .logo {
+        font-size: 35px;
+        padding: 10px 0;
+    }
+}
